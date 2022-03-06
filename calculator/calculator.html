@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="calculator.css">
+  
+    </head>
+ <body id="body">
+     <div id="theme">
+        <div>
+            <h4>Choose a Style:</h4>
+            <label for="light">Light:</label>
+            <input type="radio" id="light" class="theme" name="theme" onclick="document.getElementById('body').style.background = 'lightskyblue' " checked/>
+            <label for="dark">Dark:</label>
+            <input type="radio" id="dark" class="theme" name="theme" onclick="document.getElementById('body').style.background = 'slategrey' "/>
+        </div>
+        <div>
+            <img id="robot" src="/images/robot.svg"/>
+        </div>
+     </div>
+
+    <div id="title">
+    <h1>Do The Math...</h1>
+    </div>
+    <div class="border">
+       
+      <div id="cal">
+        <label for="adda">Add Numbers:</label><br>
+        <input id="adda" type="number"  placeholder="First Number">
+        <label for="addb">+</label>
+        <input id="addb" Type="number"  placeholder="Second Number">
+        <button type="button" onclick="add()">Get Answer</button>
+        <button type="button" id="clear1">Clear</button>
+
+        <div class="answerdiv">
+       <p  id="postAddAnswer" class="answer"></p>
+        </div>
+
+        <label for="mina">Subtract Numbers:</label><br>
+        <input id="mina" type="number"  placeholder="First Number">
+        <label for="minb">-</label>
+        <input id="minb" type="number"  placeholder="Second Number">
+        <button type="button" onclick="sub()">Get Answer</button>
+        <button type="button" id="clear2">Clear</button>
+
+        <div class="answerdiv">
+            <p id="postMinAnswer" class="answer"></p>
+        </div>
+
+        <label for="mula">Multiply Numbers:</label><br>
+        <input id="mula" type="number"  placeholder="First Number">
+        <label for="mulb">x</label>
+        <input id="mulb" type="number"  placeholder="Second Number">
+        <button type="button" onclick="mul()">Get Answer</button>
+        <button type="button" id="clear3">Clear</button>
+
+        <div class="answerdiv">
+            <p id="postMulAnswer" class="answer"></p>
+        </div>
+
+        <label for="diva">Divide Numbers:</label><br>
+        <input id="diva" type="number"  placeholder="First Number">
+        <label for="divb">/</label>
+        <input id="divb" type="number"  placeholder="Second Number">
+        <button type="button" onclick="div()">Get Answer</button>
+        <button type="button" id="clear4">Clear</button>
+
+        <div class="answerdiv">
+            <p id="postDivAnswer" class="answer"></p>
+        </div>
+
+        <label for="pera">Percent:</label><br>
+        <input id="pera" type="number"   placeholder="First Number">
+        <label for="perb">%</label>
+        <input id="perb" type="number"  placeholder="Second Number">
+        <button type="button" onclick="per()">Get Answer</button>
+        <button type="button" id="clear5">Clear</button>
+        <p>Example: What is 20% (First Number) of 100 (Second Number)</p>
+
+        <div class="answerdiv">
+            <p id="postPerAnswer" class="answer"></p>
+        </div>
+        <div>
+            <button type="button" id="clearAll">Clear All</button>
+        </div>
+        
+    </div> 
+
+</div>
+<div id="quote">
+ <p>A special thanks to <b><i>Kevin Noonan</i></b> and his favorite quote <b>"Do The Math..."</b> </p>
+</div>
+
+
+<div class="borders">
+    <h2>Welcome to the website</h2>
+</div>
+<div id="info" class="borders">
+    <p>I hope you enjoy the easy to use calculator. I programed this for the web 
+        while I was in school. I wanted to make something web based people can actually 
+        use anytime they need a calculator.
+    </p>
+</div>
+<div class="borders">
+    <img class="pic" src="/images/phillip.jpg"/>
+</div>
+<div id="thanks" class="borders">
+    <h2>Thanks for visiting</h2>
+</div>
+
+
+<footer>
+    <h1>Connect with Phillip:</h1>
+    <button type="submit" onclick="connect()">Click Here</button>
+    <a href="https://www.linkedin.com/in/phillip-rose-037856206/">
+    <img  class="icon" src="/images/5296501_linkedin_network_linkedin logo_icon.svg"/>
+    </a>
+</footer>
+<script src="calculator.js"></script>
+ </body>
+</html>
+
